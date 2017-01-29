@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding:0;
+
+}
+.container{
+	min-height:400px;
+	position:relative;
+	}
+.form-wrapper{
+	position: relative;
+	margin: 0 auto;
+	max-width: 522px;	
+	height: 100%;
+	}
+.entryform{
+	position: absolute;
+
+	padding: 10px;
+	border-radius: 5px;
+	/*background: #efefef;*/
+	width: 500px;	
+	}
+	
+
+#contactDetail .form-details input[type="text"]{	
+	width:275px	
+}
+.Formheading{
+background-color:#ffffff; 
+padding: 10px 10px 10px 20px; 
+color:#341b1b;
+text-align: center;
+line-height: 25px;
+}	
+#contactDetail .form-details td{	
+	padding:10px 10px 10px 20px;	
+}
+/*.form-heading {
+
+	background:url('../image/form_background.gif') repeat-x scroll left top transparent;
+	background-image: -moz-linear-gradient(center top , #FDFDFD, #E3E3E3);
+    border-bottom: 1px solid #CCCCCC;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+   
+}*/
+.entryform  .form-heading{
+height:50px;
+text-align:center;
+ text-align: center;
+}
+.entryform  .submitbtn{
+padding-left: 120px;
+}
+
+.error{
+    color:#ff0000;
+	font-style:italic;
+}
+#submitbtn > input {
+    margin: 10px;
+	}
+.entryform ul li .textbox{	
+	width:260px;	
+	height:25px;
+}
+.entryform ul li label{	
+	display:block;
+	width:120px;
+	height:25px;
+	text-align:left;
+	float:left;
+}
