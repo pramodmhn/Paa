@@ -23,8 +23,8 @@
 <?php if((isset($_GET['src']) && $_GET['src'] != 'pi_2015') || !isset($_GET['src']) || $_GET['src'] == ""){?>
 <script>
   var banners = [ 
-       {img: 'images/training_masthead.jpg?v=<?php echo time();?>', url: ''},
-    {img: 'images/dinosaur_masthead.jpg?v=<?php echo time();?>', url: ''},
+       {img: 'images/trainingbanner_jan2017.jpg?v=<?php echo time();?>', url: 'index.php?src=course'},
+    {img: 'images/dinosaur_masthead.jpg?v=<?php echo time();?>', url: 'index.php'},
       
       /*
     {img: 'images/pi_2016_banner.jpg', url: 'index.php?src=pi_2015'}*/
