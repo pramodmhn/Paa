@@ -9,7 +9,7 @@ if(isset($_GET['s'])){
 }
 if(isset($_POST['submit'])){
   // save to file
-  $path = dirname(__FILE__).'/docs/training_2016_booking.html';
+  $path = dirname(__FILE__).'/docs/training_2017_booking.html';
   $filecontent = '<p>Registration Date: '.date('d M Y').'</p>';
   $filecontent .= '
   <table>';
@@ -41,8 +41,7 @@ if(isset($_POST['submit'])){
 
 
   // mail to Andrew
-  $to = 'info@profibusaustralia.com.au';
-  #$to = 'sachuit@gmail.com';
+  $to = 'info@profibusaustralia.com.au';//'maharjanpramod@hotmail.com';
   $subject = '2016 May PROFIBUS and PROFINET Training Reservation | '.date('d/M/Y');
   $headers = "From: " . strip_tags($_POST['email']) . "\r\n";
   $headers .= "Reply-To: ". strip_tags($_POST['email']) . "\r\n";
@@ -55,15 +54,16 @@ if(isset($_POST['submit'])){
   $message .= '<tr><td><strong>Company</strong></td><td>'.$_POST['company'].'</td></tr>';  
   $message .= '<tr><td><strong>Email</strong></td><td>'.$_POST['email'].'</td></tr>';
   $message .= '<tr><td><strong>Phone</strong></td><td>'.$_POST['phone'].'</td></tr>';  
-  $message .= '<tr><td><strong>Courses</strong></td><td>'.$_POST['courses'].'</td></tr>';  
+  $message .= '<tr><td><strong>Courses</strong></td><td>'.$_POST['courses'].'</td></tr>';
+  $message .= '<tr><td><strong>Training Venue</strong></td><td>'.$_POST['venue'].'</td></tr>';     
   $message .= '<tr><td><strong>No. of students</strong></td><td>'.$_POST['no_students'].'</td></tr>';  
   $message .= '<tr><td colspan="2">&nbsp;</td></td><tr><tr><td><strong>Registration Date</strong></td><td>'.date('d M Y').'</td></tr>';
   $message .='</table>';
   $message .='<br/><br/>';
-  $message .='<p><a href="http://www.profibusaustralia.com.au/training-2016/docs/training_2016_booking.html">Click here</a> to check all bookings.</p>';
+  $message .='<p><a href="http://www.profibusaustralia.com.au/training-2017-form/docs/training_2017_booking.html">Click here</a> to check all bookings.</p>';
   $message .= '</body></html>';
   if(mail($to, $subject, $message, $headers)){
-    header('Location: http://profibusaustralia.com.au/training-2016/training_2016_booking.php?s=1');
+    header('Location: http://profibusaustralia.com.au/training-2017-form/training_2017_booking.php?s=1');
   }
 }
 ?>
@@ -190,7 +190,7 @@ if(isset($_POST['submit'])){
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-12">A representator from Profibus Australia will call you to discuss your training reguards.</label>            
+            <label class="control-label col-sm-12">A PAA representative will call you to discuss your training requirements.</label>            
           </div>
           <div id="error"></div>
           <div class="form-group">
