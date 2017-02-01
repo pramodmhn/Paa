@@ -225,7 +225,13 @@
 
 {"lastname":"Barea Castillo","firstname":"Sonia ","company":"SPIN AU Pty Ltd","Graduation Date":"October 2016"},
 {"lastname":"Gandy","firstname":"Steven ","company":"SPIN AU Pty Ltd","Graduation Date":"October 2016"},
-{"lastname":"Go","firstname":"Harold ","company":"RCR Water","Graduation Date":"October 2016"}
+{"lastname":"Go","firstname":"Harold ","company":"RCR Water","Graduation Date":"October 2016"},
+
+{"lastname":"Ellis","firstname":"Troy","company":"Sandfire Resources","Graduation Date":"May 2015"},
+{"lastname":"Boyhan","firstname":"Mark","company":"Sandfire Resources","Graduation Date":"May 2015"},
+{"lastname":"Jones","firstname":"Stewart","company":"Sandfire Resources","Graduation Date":"May 2015"},
+{"lastname":"Sibanda","firstname":"Alfred","company":"Fortescue Metals","Graduation Date":"May 2015"},
+{"lastname":"Byrne","firstname":"Noel","company":"Contractor","Graduation Date":"May 2015"}
 
 ]
 }
